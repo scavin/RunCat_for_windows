@@ -1,0 +1,42 @@
+完整的工作流程可能会像下面这样：
+
+name: .NET 6.0
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '6.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build
+      run: dotnet build --no-restore -c Release
+
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+
+    - name: Publish
+      run: dotnet publish --configuration Release --output ./published_app
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: compiled-application
+        path: |
+          ./published_app/*
