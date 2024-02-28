@@ -35,17 +35,17 @@ jobs:
     - name: Publish 32-bit
       run: dotnet publish --configuration Release --no-self-contained --runtime win-x86 --output ./published_app/Release86
 
-    - name: Upload artifacts
-      uses: actions/upload-artifact@v4
+    - name: Upload 64-bit artifacts
+      uses: actions/upload-artifact@v2
       with:
-        name: compiled-application 
+        name: compiled-application-64 
         path: |
           ./published_app/Release64/*
-          ./published_app/Release86/*
-      
-    - name  : Upload artifact
-      uses: actions/upload-artifact@v4
+    
+    
+    - name: Upload 32-bit artifacts
+      uses: actions/upload-artifact@v2
       with:
-        name: compiled-application
+        name: compiled-application-32
         path: |
-          ./published_app/*
+          ./published_app/Release86/*
