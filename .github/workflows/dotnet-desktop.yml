@@ -28,11 +28,22 @@ jobs:
 
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    
+    - name: Publish 64-bit
+      run: dotnet publish -c Release -p:PublishSingleFile=true -r win-x64 -o ./published_app/Release64
+    
+    - name: Publish 32-bit
+      run: dotnet publish -c Release -p:PublishSingleFile=true -r win-x86 -o ./published_app/Release86
 
-    - name: Publish
-      run: dotnet publish --configuration Release --output ./published_app
-
-    - name: Upload artifact
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: compiled-application 
+        path: |
+          ./published_app/Release64/*
+          ./published_app/Release86/*
+      
+    - name  : Upload artifact
       uses: actions/upload-artifact@v2
       with:
         name: compiled-application
