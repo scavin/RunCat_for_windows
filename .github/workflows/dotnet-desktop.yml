@@ -13,10 +13,10 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Setup .NET
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@v4
       with:
         dotnet-version: '6.0.x'
 
@@ -36,7 +36,7 @@ jobs:
       run: dotnet publish --configuration Release --no-self-contained --runtime win-x86 --output ./published_app/Release86
 
     - name: Upload artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: compiled-application 
         path: |
@@ -44,7 +44,7 @@ jobs:
           ./published_app/Release86/*
       
     - name  : Upload artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: compiled-application
         path: |
