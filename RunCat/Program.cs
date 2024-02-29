@@ -227,7 +227,7 @@ namespace RunCat
             }
             else if (runner.Equals("japaneseapology"))
             {
-                capacity = 15;
+                capacity = 17;
             }
             List<Icon> list = new List<Icon>(capacity);
             for (int i = 0; i < capacity; i++)
