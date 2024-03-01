@@ -1,6 +1,7 @@
 name: .NET 6.0
 
 on:
+  workflow_dispatch:
   push:
     branches: [ master ]
   pull_request:
