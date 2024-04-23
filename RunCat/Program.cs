@@ -97,6 +97,10 @@ namespace RunCat
                 new ToolStripMenuItem("JapaneseApology", null, SetRunner)
                 {
                     Checked = runner.Equals("japaneseapology")
+                },
+                new ToolStripMenuItem("JapaneseApologyMirror", null, SetRunner)
+                {
+                    Checked = runner.Equals("japaneseapologymirror")
                 }
             });
 
@@ -221,11 +225,15 @@ namespace RunCat
             {
                 capacity = 10;
             } 
-            else if (runner.Equals("horse")) 
+            else if (runner.Equals("horse"))
             {
                 capacity = 14;
             }
             else if (runner.Equals("japaneseapology"))
+            {
+                capacity = 17;
+            }
+            else if (runner.Equals("japaneseapologymirror"))
             {
                 capacity = 17;
             }

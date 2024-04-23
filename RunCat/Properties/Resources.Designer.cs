@@ -10,8 +10,8 @@
 
 namespace RunCat.Properties {
     using System;
-    
-    
+
+
     /// <summary>
     ///   ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
     /// </summary>
@@ -23,15 +23,15 @@ namespace RunCat.Properties {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
-        
+
         private static global::System.Resources.ResourceManager resourceMan;
-        
+
         private static global::System.Globalization.CultureInfo resourceCulture;
-        
+
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal Resources() {
         }
-        
+
         /// <summary>
         ///   このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
         /// </summary>
@@ -45,7 +45,7 @@ namespace RunCat.Properties {
                 return resourceMan;
             }
         }
-        
+
         /// <summary>
         ///   すべてについて、現在のスレッドの CurrentUICulture プロパティをオーバーライドします
         ///   現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
@@ -59,7 +59,7 @@ namespace RunCat.Properties {
                 resourceCulture = value;
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -69,7 +69,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -79,7 +79,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -89,7 +89,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -99,7 +99,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -109,7 +109,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -119,7 +119,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -129,7 +129,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -139,7 +139,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -149,7 +149,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -159,7 +159,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -169,7 +169,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -179,7 +179,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -189,7 +189,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -199,7 +199,6 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -209,7 +208,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -219,7 +218,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -229,7 +228,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -239,7 +238,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -249,7 +248,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -259,7 +258,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -269,7 +268,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -279,7 +278,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -289,7 +288,6 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -299,7 +297,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -309,7 +307,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -319,7 +317,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -329,7 +327,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -339,7 +337,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -349,7 +347,7 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-        
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -746,6 +744,124 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
+        //create 2 icons from 15 to 16
+        internal static System.Drawing.Icon dark_japaneseapology_15 {
+            get {
+                object obj = ResourceManager.GetObject("dark_japaneseapology_15", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+
+        internal static System.Drawing.Icon dark_japaneseapology_16 {
+            get {
+                object obj = ResourceManager.GetObject("dark_japaneseapology_16", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        //create 17 icons for dark_japaneseapologymirror
+        internal static System.Drawing.Icon dark_japaneseapologymirror_0 {
+            get {
+                object obj = ResourceManager.GetObject("dark_japaneseapologymirror_0", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon dark_japaneseapologymirror_1 {
+            get {
+                object obj = ResourceManager.GetObject("dark_japaneseapologymirror_1", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon dark_japaneseapologymirror_2 {
+            get {
+                object obj = ResourceManager.GetObject("dark_japaneseapologymirror_2", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon dark_japaneseapologymirror_3 {
+            get {
+                object obj = ResourceManager.GetObject("dark_japaneseapologymirror_3", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon dark_japaneseapologymirror_4 {
+            get {
+                object obj = ResourceManager.GetObject("dark_japaneseapologymirror_4", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon dark_japaneseapologymirror_5 {
+            get {
+                object obj = ResourceManager.GetObject("dark_japaneseapologymirror_5", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon dark_japaneseapologymirror_6 {
+            get {
+                object obj = ResourceManager.GetObject("dark_japaneseapologymirror_6", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon dark_japaneseapologymirror_7 {
+            get {
+                object obj = ResourceManager.GetObject("dark_japaneseapologymirror_7", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon dark_japaneseapologymirror_8 {
+            get {
+                object obj = ResourceManager.GetObject("dark_japaneseapologymirror_8", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon dark_japaneseapologymirror_9 {
+            get {
+                object obj = ResourceManager.GetObject("dark_japaneseapologymirror_9", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon dark_japaneseapologymirror_10 {
+            get {
+                object obj = ResourceManager.GetObject("dark_japaneseapologymirror_10", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon dark_japaneseapologymirror_11 {
+            get {
+                object obj = ResourceManager.GetObject("dark_japaneseapologymirror_11", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon dark_japaneseapologymirror_12 {
+            get {
+                object obj = ResourceManager.GetObject("dark_japaneseapologymirror_12", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon dark_japaneseapologymirror_13 {
+            get {
+                object obj = ResourceManager.GetObject("dark_japaneseapologymirror_13", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon dark_japaneseapologymirror_14 {
+            get {
+                object obj = ResourceManager.GetObject("dark_japaneseapologymirror_14", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon dark_japaneseapologymirror_15 {
+            get {
+                object obj = ResourceManager.GetObject("dark_japaneseapologymirror_15", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon dark_japaneseapologymirror_16 {
+            get {
+                object obj = ResourceManager.GetObject("dark_japaneseapologymirror_16", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -881,5 +997,119 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-    }
-}
+        //create 2 more icons from 15 to 16
+        internal static System.Drawing.Icon light_japaneseapology_15 {
+            get {
+                object obj = ResourceManager.GetObject("light_japaneseapology_15", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon light_japaneseapology_16 {
+            get {
+                object obj = ResourceManager.GetObject("light_japaneseapology_16", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+         }
+         //create 17 icons for light_japaneseapologymirror_xx
+        internal static System.Drawing.Icon light_japaneseapologymirror_0 {
+            get {
+                object obj = ResourceManager.GetObject("light_japaneseapologymirror_0", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon light_japaneseapologymirror_1 {
+            get {
+                object obj = ResourceManager.GetObject("light_japaneseapologymirror_1", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon light_japaneseapologymirror_2 {
+            get {
+                object obj = ResourceManager.GetObject("light_japaneseapologymirror_2", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon light_japaneseapologymirror_3 {
+            get {
+                object obj = ResourceManager.GetObject("light_japaneseapologymirror_3", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon light_japaneseapologymirror_4 {
+            get {
+                object obj = ResourceManager.GetObject("light_japaneseapologymirror_4", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon light_japaneseapologymirror_5 {
+            get {
+                object obj = ResourceManager.GetObject("light_japaneseapologymirror_5", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon light_japaneseapologymirror_6 {
+            get {
+                object obj = ResourceManager.GetObject("light_japaneseapologymirror_6", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon light_japaneseapologymirror_7 {
+            get {
+                object obj = ResourceManager.GetObject("light_japaneseapologymirror_7", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon light_japaneseapologymirror_8 {
+            get {
+                object obj = ResourceManager.GetObject("light_japaneseapologymirror_8", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon light_japaneseapologymirror_9 {
+            get {
+                object obj = ResourceManager.GetObject("light_japaneseapologymirror_9", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon light_japaneseapologymirror_10 {
+            get {
+                object obj = ResourceManager.GetObject("light_japaneseapologymirror_10", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon light_japaneseapologymirror_11 {
+            get {
+                object obj = ResourceManager.GetObject("light_japaneseapologymirror_11", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon light_japaneseapologymirror_12 {
+            get {
+                object obj = ResourceManager.GetObject("light_japaneseapologymirror_12", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon light_japaneseapologymirror_13 {
+            get {
+                object obj = ResourceManager.GetObject("light_japaneseapologymirror_13", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon light_japaneseapologymirror_14 {
+            get {
+                object obj = ResourceManager.GetObject("light_japaneseapologymirror_14", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon light_japaneseapologymirror_15 {
+            get {
+                object obj = ResourceManager.GetObject("light_japaneseapologymirror_15", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon light_japaneseapologymirror_16 {
+            get {
+                object obj = ResourceManager.GetObject("light_japaneseapologymirror_16", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
