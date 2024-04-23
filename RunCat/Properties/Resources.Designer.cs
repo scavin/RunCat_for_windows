@@ -744,6 +744,21 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
+        //create 2 icons from 15 to 16
+        internal static System.Drawing.Icon dark_japaneseapology_15 {
+            get {
+                object obj = ResourceManager.GetObject("dark_japaneseapology_15", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+
+        internal static System.Drawing.Icon dark_japaneseapology_16 {
+            get {
+                object obj = ResourceManager.GetObject("dark_japaneseapology_16", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+
         /// <summary>
         ///   (アイコン) に類似した型 System.Drawing.Icon のローカライズされたリソースを検索します。
         /// </summary>
@@ -879,5 +894,17 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
-    }
+        //create 2 more icons from 15 to 16
+        internal static System.Drawing.Icon light_japaneseapology_15 {
+            get {
+                object obj = ResourceManager.GetObject("light_japaneseapology_15", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        internal static System.Drawing.Icon light_japaneseapology_16 {
+            get {
+                object obj = ResourceManager.GetObject("light_japaneseapology_16", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+         }
 }
