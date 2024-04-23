@@ -1113,3 +1113,5 @@ namespace RunCat.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
+    }
+}
