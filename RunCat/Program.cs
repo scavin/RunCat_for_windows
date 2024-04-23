@@ -21,6 +21,7 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using System.Resources;
 using System.ComponentModel;
+using System.Linq;
 
 namespace RunCat
 {
@@ -31,9 +32,10 @@ namespace RunCat
         {
             bool allowMultiple = args.Contains("--multiple");
             // terminate runcat if there's any existing instance
+            var procMutex = new System.Threading.Mutex(false, "_RUNCAT_MUTEX", out var result);
             if (!allowMultiple)
             {
-                var procMutex = new System.Threading.Mutex(true, "_RUNCAT_MUTEX", out var result);
+                result = procMutex.WaitOne(0, false);
                 if (!result)
                 {
                     return;
