@@ -27,21 +27,27 @@ namespace RunCat
     static class Program
     {
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
+            bool allowMultiple = args.Contains("--multiple");
             // terminate runcat if there's any existing instance
-            var procMutex = new System.Threading.Mutex(true, "_RUNCAT_MUTEX", out var result);
-            if (!result)
+            if (!allowMultiple)
             {
-                return;
+                var procMutex = new System.Threading.Mutex(true, "_RUNCAT_MUTEX", out var result);
+                if (!result)
+                {
+                    return;
+                }
             }
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.Run(new RunCatApplicationContext());
-
-            procMutex.ReleaseMutex();
+            if (!allowMultiple)
+            {
+                procMutex.ReleaseMutex();
+            }
         }
     }
 
@@ -224,7 +230,7 @@ namespace RunCat
             if (runner.Equals("parrot"))
             {
                 capacity = 10;
-            } 
+            }
             else if (runner.Equals("horse"))
             {
                 capacity = 14;
@@ -366,7 +372,7 @@ namespace RunCat
         private void CPUTickSpeed()
         {
             if (!speed.Equals("default"))
-            {            
+            {
                 float manualInterval = (float)Math.Max(minCPU, interval);
                 animateTimer.Stop();
                 animateTimer.Interval = (int)manualInterval;
@@ -399,7 +405,6 @@ namespace RunCat
             cpuTimer.Tick += new EventHandler(ObserveCPUTick);
             cpuTimer.Start();
         }
-        
         private void HandleDoubleClick(object Sender, EventArgs e)
         {
             var startInfo = new ProcessStartInfo
