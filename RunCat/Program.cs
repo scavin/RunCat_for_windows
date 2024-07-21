@@ -21,6 +21,8 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using System.Resources;
 using System.ComponentModel;
+using System.Net.NetworkInformation;
+using System.Linq;
 
 namespace RunCat
 {
@@ -47,9 +49,11 @@ namespace RunCat
 
     public class RunCatApplicationContext : ApplicationContext
     {
-        private const int CPU_TIMER_DEFAULT_INTERVAL = 3000;
+        private const int CPU_TIMER_DEFAULT_INTERVAL = 1000;
         private const int ANIMATE_TIMER_DEFAULT_INTERVAL = 200;
         private PerformanceCounter cpuUsage;
+        private PerformanceCounter netSentSpeed;
+        private PerformanceCounter netReceivedSpeed;
         private ToolStripMenuItem runnerMenu;
         private ToolStripMenuItem themeMenu;
         private ToolStripMenuItem startupMenu;
@@ -78,6 +82,15 @@ namespace RunCat
             SystemEvents.UserPreferenceChanged += new UserPreferenceChangedEventHandler(UserPreferenceChanged);
 
             cpuUsage = new PerformanceCounter("Processor Information", "% Processor Utility", "_Total");
+            string networkInterfaceName = GetNetworkInterfaceName();
+            if (string.IsNullOrEmpty(networkInterfaceName))
+            {
+                throw new InvalidOperationException("No valid network interface found.");
+            }
+
+            netSentSpeed = new PerformanceCounter("Network Interface", "Bytes Sent/sec", networkInterfaceName);
+            netReceivedSpeed = new PerformanceCounter("Network Interface", "Bytes Received/sec", networkInterfaceName);
+
             _ = cpuUsage.NextValue(); // discards first return value
 
             runnerMenu = new ToolStripMenuItem("Runner", null, new ToolStripMenuItem[]
@@ -154,7 +167,7 @@ namespace RunCat
                 startupMenu,
                 runnerSpeedLimit,
                 new ToolStripSeparator(),
-                new ToolStripMenuItem($"{Application.ProductName} v{Application.ProductVersion}")
+                new ToolStripMenuItem($"{Application.ProductName} v{Application.ProductVersion.Substring(0, 14)}")
                 {
                     Enabled = false
                 },
@@ -375,7 +388,12 @@ namespace RunCat
         private void CPUTick()
         {
             interval = Math.Min(100, cpuUsage.NextValue()); // Sometimes got over 100% so it should be limited to 100%
-            notifyIcon.Text = $"CPU: {interval:f1}%";
+
+            string sentSpeedText = FormatSpeed(netSentSpeed.NextValue());
+            string receivedSpeedText = FormatSpeed(netReceivedSpeed.NextValue());
+
+            notifyIcon.Text = $"CPU: {interval:f1}%\nSent: {sentSpeedText}\nReceived: {receivedSpeedText}";
+
             interval = 200.0f / (float)Math.Max(1.0f, Math.Min(20.0f, interval / 5.0f));
             _ = interval;
             CPUTickSpeed();
@@ -402,6 +420,42 @@ namespace RunCat
                 CreateNoWindow = true,
             };
             Process.Start(startInfo);
+        }
+
+        private string GetNetworkInterfaceName()
+        {
+            // 获取所有网络接口
+            var interfaces = NetworkInterface.GetAllNetworkInterfaces();
+
+            // 选择第一个不是环回适配器、不是VPN且是运行中的网络接口
+            var networkInterface = interfaces.FirstOrDefault(ni =>
+                ni.NetworkInterfaceType != NetworkInterfaceType.Loopback &&
+                ni.NetworkInterfaceType != NetworkInterfaceType.Tunnel &&
+                ni.OperationalStatus == OperationalStatus.Up &&
+                !ni.Description.ToLower().Contains("vpn") &&
+                !ni.Description.ToLower().Contains("tap") &&
+                !ni.Description.ToLower().Contains("tun"));
+
+            return networkInterface?.Description;
+        }
+
+        private string FormatSpeed(float speedBytes)
+        {
+            if (speedBytes >= 1073741824) {
+                return $"{speedBytes / 1073741824:f1} GB/s";
+            }
+            else if (speedBytes >= 1048576) // 大于1 MB
+            {
+                return $"{speedBytes / 1048576:f1} MB/s";
+            }
+            else if (speedBytes >= 1024) // 大于1 KB
+            {
+                return $"{speedBytes / 1024:f1} KB/s";
+            }
+            else // 小于1 KB
+            {
+                return $"{speedBytes:f1} B/s";
+            }
         }
 
     }
