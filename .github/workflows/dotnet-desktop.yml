@@ -40,21 +40,21 @@ jobs:
       run: dotnet publish --configuration Release --no-self-contained --runtime win-arm64 --output ./published_app/ReleaseARM64
 
     - name: Upload 64-bit artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: compiled-application-64 
         path: |
           ./published_app/Release64/*
     
     - name: Upload 32-bit artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: compiled-application-32
         path: |
           ./published_app/Release86/*
 
     - name: Upload ARM64 artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: compiled-application-ARM64
         path: |
